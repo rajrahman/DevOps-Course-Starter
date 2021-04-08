@@ -1,9 +1,10 @@
 # Perform common operations, dependency installation etc...
-FROM python:3.9.0-buster as base
+FROM python:3.8-slim-buster as base
 RUN pip install poetry
 WORKDIR /DevOps-Course-Starter
 COPY pyproject.toml /DevOps-Course-Starter/
 COPY . /DevOps-Course-Starter/
+RUN poetry config virtualenvs.create false && poetry install --no-interaction
 
 # Configure for production
 FROM base as production
@@ -15,21 +16,12 @@ FROM base as development
 RUN poetry install
 ENTRYPOINT poetry run flask run --host=0.0.0.0
 
-# testing stage
+# Configure for Tests
 FROM base as test
-RUN poetry install
-ENTRYPOINT ["poetry", "run", "pytest"]
-
-# Install Chrome 
-RUN apt-get update
+# Install curl
+RUN apt-get update && apt-get install -y curl
+# Install latest Chrome 
 RUN curl -sSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o chrome.deb &&\
-    apt-get install ./chrome.deb -y &&\  
-    rm ./chrome.deb 
-
-# Install Chromium WebDriver 
-RUN apt-get update
-RUN apt-get install -yqq unzip
-RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
-RUN unzip /tmp/chromedriver.zip chromedriver -d ./
-
-ENTRYPOINT [ "poetry", "run", "pytest" ]
+ apt-get install ./chrome.deb -y && \
+ rm ./chrome.deb
+ENTRYPOINT ["poetry", "run", "pytest"]
