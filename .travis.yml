@@ -1,19 +1,20 @@
 env:
   global:
-  # Trello
-    - secure: "Dh7ndyxgpTHDa3ilqSNPInRUNyWd4/PLQSlk9FYtcnUcMnLU4KD4hK4bJ+VMsXh8pvAi4TMgB3+rffud2Koo920Syu9evclTgiKAFbZpxQgK/R3zfV0OS7VN8edgnUaF3P9WTbUeRkPXxqGbjLAToFmMRTbIxPoX5VvRmMyQNpwxdwEmmfeWqQG1QL5GtiIKJlDXYJDDSxgPL18XFnWEblzX2C3vaqn2A7m95Z02sOS5FIVWgnr0SB7UN1wpeqg6QNXjKbNAdhQlBs0Nl3nmUBKZQvZWweGAWBhYylEQ0twjqkXAH5v52wvizbpNJpxOu/4G+ukl91wkK+7bF4m0EVbD2giSjzSyM08nDUJ5+EUFEs9ALWKHqetWeexqjIR9eJ97rT9+rp+wlIU6sQ9X9ZeyJuDpP3sF9sIB/talVdbLSyVwE7v2xTKSZgzMyG2OE7ZIEWgm9tO5NoLfCHDx9TD0Zb9G6tgRbOGIfVbN6QLRR6v15AjYP7Z3w0QykObaieqWU6j2xcqib2k0o5ePrKYvm7QvYcoUIPbSOW8w/ApQZ5o7OJBQ3u0tU6GIuKZPgDD+dCrf33BBPSbakoqS8AJsWFlAkpyygW5UY4ZF2ruicD1PX8HdIkLIOk+PGk19iuvMv+cN1qF08/q91FK82peh8kttXWL0lz5ePoCZj8Y="
-    - secure: "SQa4hlf24DE77YhEaG/MA694g0+EEmaxzd7y6I1wdV7P8wkcOdWtSmwHTuklzkVljzE5a6jPeOC0pi8eedU90rPwfytEQlpmTODTgu2RgZJpTzHW9ePIKaH+2BPXFrwuFwnY12NWJIunXGZa8DDDDom8oS3UuJsyLq9UdDoETJPtq+31gpzJ55EtxVtGu/ROTD5rLDjQgABiASKgjITqgMn0dy27pVxv3Qn49dBEzwBvXiOqi5BSisI8mRKZBHWc4xSUWX6lIk5gvj6ou3S1SSKwL57EXuUIF6HJzjYgbaXow0pcDth9ExHCNyGZAmHEhoIlXYyvbGFA5BxDOyQKPK+6Z8dVC7vKzds+ETwnCyB4D92sWfAHYvFS7/EydKFBNdn2NYlKAYTTY/VtNgS7RzJoFMdziwi+H6o3gZHast8dmJmL9I9vijpMBBtADkfLs7/D5SsPiwZnBikvH+XxecgkaqD+IGf4RGFNQsVMd2DBacFlJB5DcXYWISKhXWYIthfwnbKx5f+luciu7OX2h/Pganw20TsJBotl0IW33w/lzu/pElhH/XVl5NDWSdbcv/0+uOU8yDEzfaeY0qlrFKD9a7adcUNAiAFSsNuHGUXQYcT5qfquSCD0hmxLJ7yqdDxyBi2IsPiRR28v3cTsyiKIIf+3E/6kOKQ7GhBfMRQ="
-    - trello_boardid: J3hiTYRX
-    - todo_list_id: 5efa545c830dc848ae0c7cd8
-    - doing_list_id: 5efa545cf6f6961180a75b76
-    - done_list_id: 5efa545c20355627365e68fd
+  # Mongo 
+    - secure: "ZTW1mHr/JgXRJqHmEMB9dU1HRbR4X2cFbSxZDFY1LDiNm/s8KZ4npJb6rJx3s7+GFODfqskHPTXp3bHouhBVeCl58zLKNZub3cIGtvoyJE0i5X6m2gAPsFlMdkNK0/3kiBmqWj23kU7z5owtlf18q7ELbXaK8S1ieq553J7LabU3munO4nw0iX5CzApzx8/ld2rpDYbLBrtdsbkXt0xKDIXkKt9r4VB4XWsVStKB+7I96kOnBGwp6YJx3z+8FdVur8+Jf6OvFflDdMMGsGfxuIob502X2lKFsFVXQgOGwiOmGg7BjdC7oarc3mb/1EDjSgTA9cvar+4rbyquGvXCToCapgDK7uZWXkRGqWPwR7y0TdgGNW9/Yurwt0ghbyRam3z4+zOLnyUDu+8pXcRqSYVkLtXv9+PyoVk+z8Zts1CC8avCuuah7nLMSqTZrCphdWcpbs4TnUfWY+/8aqjIytOYfvzANGsjhS7lZ1T1FcHOXoOdLx87C9E6YLcAE/jOij4hMowX2g5gvIQyXOebv8Yj6Bd90d6AfptjmWaF5uts50W/5Pdoe4+BoWI24lKSgzHVYhAW2zgdj88e18S/JkbMmB6NEM8mylRbPbeOjNX9DYOSR9Ad/cqm7c14VEi2LkwhCa05gKobm9I1D4SxhYaWpAlbF5MUvkHEuKvSIUE="
+    - MONGO_DB_NAME: DevOps
+    - MONGO_LIST_TODO: todo
+    - MONGO_LIST_INPROGRESS: inprogress
+    - MONGO_LIST_DONE: done
   # Docker
     - secure: "xxUmhWPB0MLv7DrKeLrt7Q5eNOjSFOL1phnaLLdmvipKBz12eCzgRiAhCmXWroMe4diIaodvcgKgc32kMwiNXaAVGuSOdTs04vRPB5YyGJSQn0BcFuVfBHH+ZPdtLDHzMB/toC1Nk/vF9cUGPvBPA1wDlxbFuEP7ARFUzdfhANIttNB2PVpWOAEWRBFceCpmcKzonhyRKCHZUO1rn64hzTMHJJbPKrpeDDrlJKwIlCSL3JzmuLxZ7cAGoLwQ2irAat6ZX+o+E4L042/+/AFmmlW9AouGHhEACqL9HhzZ1Z7p7SDYV3c6yXQ75j/HpW5RtaJWywEO1aX7Kk0q9mcWjH/X+rlPhtIaUmxFhQyrw9wW6KphQSxIDUYD6bivEWtdwGxPSYQWeO0GczXDv8/dw+mtz8i0/MfsGzUXadmy8F/zvhxSMx5WwaKvleBzLpbuKxXO4BCxcpgXofECByqTdi00NogwEaQOgm+0YU90cl0bvDEqqGP/kDqsR0Q0ZPBiK3+ckrnJrqMnPYCo3eBDKaVVT6PWDSACfVo0xdTxmS0KJWVnAXsYBz8hOr8v0nkiTD3GL/fUZe1wNQO+3T1oRPeYB+Lj7A/WzMcGCBomcyzeW3a4oxCaiRAA4MMS5QFIX9K5NWvSage9NzCJux2dFDU9UgPj8Dylby94Fu4wlBY="
     - secure: "J61/KUCNGuWiZ6kiZDMjcKWFXGfnluE2+umVV8zgKX0MmGMv5ZyB1QIBNgQi72UUZSrvCUFh+lf77t7SgdHVM2hrsAITgFraFIl3Cyd3nfSoyoI2g7clhtar3rOovyg+hmScVDy96xeIgbT+DOzdEqKw5AEanQO9wZxI+X6jUcqOJsj8dTVPJwaNOfQ/416qQxGQXKQMyBRn9N6e/Im0UmpfifqYLvnWK5+ELhxuFNs7ZZd/nzQRgA97u9ytDzHC1SIIK2LPLgn64IaiBdau8jWqD2PiveYlKzLEAu7aiDkLF7KUcOkh8Q3UUbf0sJt3IO0TJRUe0hdvcbpHpgHHQlTdKUuTVijpN9spdWobuLIp1QUug+zv1vlFUvypt1wR80wmiv9xFPYHrOvV7hTksNReo6yDeIE2H/YSLQSSKJaWfvT9vXDxMj4aNb3UVWp0FTdmd4d0xFG94pxYImXI/ZyzFqPES33MDDSC8ffIJfyX9MmNsEl3e6PaeWrgulp4Nkhene25R+kLrosqw+cTPoc92Hctm6zndrbUVeiywBPbRjXiEWakJ2MDzAqzd4GP/1tuxIL1YY8MOpKw4SNV19Ke1ywy59iRAb8GY4nj66aQOgErOdkGla8s69KJrr221rh4PusisYDRrirMev4MS0b68snxNjcN0FEk+IBvlL4="
   # Heroku
     - herokuapp: rajrahmantodoapp
-    - secure: "u9PjQ6s5qpMRnQZVbHaQ3u/9JmI2ooMafJoLaFTeb7+b14x169/dxsvH+58iFLiqjQgyG3eoM539CwLOQ3PkeE3VFmSysQ4Sw2B9tqE9ee763Pb+mSnTceZ6l3/OAvJmb3ZO9P1p0GG5pTDBSl9PdXZQBYoN8Tcx6OrXR1pAMAmbme1BYuuvqeX+TQvj5gK7kdXK7IINKbRcIO6QmO4h/w4Bhh9q/p2iLsEqjoXWHVWpAaz4H/YWQTs5rT3/zaI1NzXf6vXYZikdr2c4Hlyhnv1q+P052r2hr9DKoI/qKQbY8Wd8/9dtmiCTpyzGz2MSh4wIxNYUcxQ8clzIasGmUfLTPJiL0Rbu9soly5/mAV73na2g6vRO12Hng4MlR4C1pfAk541Vx1pll5+9/HSu3Bw4tyngOc1y0knn6H7HWPz3CfuPAz45PaZCn9QI+Zt0/5jlBeXC5Ez6kV2n4Sywt3hDevZP2lbq4Q0dtQGd6au0u+Os3TMq+jTg13Cj/u9Zbyoce5ywZA1W8EXqtSNu7MCvSD0bcbIn4HOFA85m5Qjbblg5NkxbW+xA3lrH/BhkW/B1d1ifVxTV4reuaNlR9q+KYEI8I9ZvOxnZgfenl5IjplXx4ayTVXny9JaM0vJTjQ2XPzxYlkwuFdAIpN3gq8F5FmlajDsULfpDTCBhxxY="
-    - secure: "gOWWEMWMUnNWJmwH25wEzjcbOMhA6E/WHyNoI1QclNZFrHtUhhZXYO53lTWtAgvRZf9D0ouPmwAcE7Hgbjh/ql3ERWpsU8W0XiolCopd5zMfYp4gpxiQVdiYTyEW8WYv8mrtwQ/lHzWSij58MAsgBDML/IYdgHHvl7Ty8b2tGE3dUd+wrLsE8nZ3XohyUELnqfNAC5+qPOv3vWSL3cAVOSSAkWsrsowbpnbprpNmV18HO0dZZno3cGj3Sj9KOUTE6ceS1TSyz9oyzyZ3zp63IUkISGS6hOcMmQEU1toixO80tQG447mkRYAZlsXo6z3rjYNNvxVZsmKFxreYeBZGbOJeiW7fI8ZBin2fhuRoERYP84psB1IFEvOuBGyrHZiScZgmFPF0r75pp8we7w/3fBQq35luCnL5hJQ13V28JFDyHYUPAm5+alzUIA2hOBjYBtGVhSSevLlpQrLUdGmxqZFWumo2qXXWxsabsbwWG4oK3ixCJP1ET0rkls5BmLr1MjWLJN30miekP54O/gk23yWH0XviAbs8MOUY+Mel6TiwEF2N1X7UdjfMSrcnKknv78dfvoAFByqlT54oiZv6yzpb7cyFuQfqRWBiMDKulu6u819F5UQzE7Z+rVOQnXglPkrwuJu8ky8Lrsdd2Lfrbc6Zaz3w5+Tcixux1jbVvhQ="
+    #apikey
+    - secure: "DKYA4sYt6Qet39+erw7L/RMSgBp3Up0KUk51SUnddzZAizg3wWy+vrWyjM6PN/B4AtlKpYiJORf0ENvMtLO6q0IiT0aM3u+Ha7CDgcG10F8cBYvQSVhUh5BXoX4+bsjn3D7e+ldTAfMOzqrHDUIVsi1xe2Mog6HNSlHu+MW6Q+UtFAQ8Q7qBS2zknVXLhtkzoMw64czqvAuM8TXFi+fSOeeWlbZx9fYlZmieLZ2giOClb8+3Y+e/zGS2EmWtD1Welb7byjJUh4Vq7k0lvWDQy80z1K1AHBuJI4BHvoJ8Zlup51P9OhfOblbpDCvU+L78rYsHLnPwLablak0nxdcuxbtKsv/kMl22hXt2ZLNb4C9x5WYbhCgPy1Ur2o9D+Tj/4VT5qo4HO0UPdPeL/2m5j8sFjk3MB2zYx6UEGrv79CKZ7EZJwGdcswijGGva+/e5CIVk7svZM6gQJfmoDrHmCFSbkPkcDX/cgtgakOS1CH5Kx5O6e6vOx2vGAcMAqxpv4LWP6pVzAbhmuwE46FyvA8M+CfzYsnWYRz4lqnVQxjf2RRIIhZ/idrSHc0Qgs1MWrvsZX2YPUc2jU38pInQMVh+2VFjuRjBW2f6T/so+CgcSEeW62Sl3epwsuHYodbI7Nqb9X5auwbS80xlO8XUu4LECY7x9NUrOsaUTMSU7hPU="
+    #heroku_login
+    - secure: "J6O8nLCQq8Qr4fkXRtd9kc0kp5UNymXcWZk6d2j/SGHWLiNxsgkGNVOMv8L5SqYCx5GfmUC7Tvag72f8+TIc2BiznlCAgia5kXY2syWxhwxhT5bvXXGoRL9j53W20FvjHWwUMiwTnqV4d+1eSpqWGoWCtd/kT5XiGgXQW3I2d6R4OzhOjNR2UcZEYhu3U6o5Zn5pZPzfFgaqMdk6iKoa5KFwBR+1wLJYOndlp0SlsNBjbtnDfy2GrqeZiEIjnn3HjyhPkAqWBtEGkut167JVYQRbJ1mC+puStpZeK0oRBh4Um5i9ufYCKnOqi/lRmH6oD8hHPXRY2P2ZlY4c1FcfflseoT36/Zlh78/LZBKVSFd0Z/LYPr3eWylHF+0gfbxA4zda+cgcVlPiOgt52OZopk3RQm19CHnMQSAuxhCpCii+zDB9dYJ+dA5+TtWCF1XEx1G4efNFDJIFw6A/ix5Pu+/vHdkA0XJnQd5WXPuHJmdKKN5NaRA2TiHeS2rwJhWLm+zKCfTBhCWyxMHHUOmq2P/IejeAXab1Fcq7t4oOmX86UXUkAc6lyCmH8QcG36uYYKqZbRDk4lvy0HEOnp1MdX1yuAr4SrUjfYixrAq846DASyszgp2Ou6m8WtpcVGx+qz6Hh/ByfrTM2YCkOSBndj7Jkc7d933AfYjf/4puIVI="
 
 services:
   - docker
@@ -24,7 +25,7 @@ before_script:
 
 script:
 
-  # Docker Build the Image
+  # Docker TEST Build the Image
   - docker build --target test --tag todoapp:test .
 
   # Docker Run Unit Test
@@ -37,9 +38,9 @@ script:
 
   # Docker Run E2E 
   - echo "Running E2E Tests"
-  - docker run -e trello_key=$trello_key -e trello_token=$trello_token -e trello_boardid=$trello_boardid -e todo_list_id=$todo_list_id -e doing_list_id=$doing_list_id -e done_list_id=$done_list_id todoapp:test test_trello.py
+  - docker run -e MONGO_DB_NAME=$MONGO_DB_NAME -e MONGO_CONN=$MONGO_CONN -e MONGO_LIST_TODO=$MONGO_LIST_TODO -e MONGO_LIST_INPROGRESS=$MONGO_LIST_INPROGRESS -e MONGO_LIST_DONE=$MONGO_LIST_DONE todoapp:test test_mongo.py
 
-  # Docker Build and Push 
+  # Docker PRODUCTION Build and Push 
   - docker build --target production --tag $docker_login/todoapp:latest .
   - docker push $docker_login/todoapp:latest
 
@@ -51,7 +52,7 @@ script:
   # Login to Heroku
   - echo "Login to Heroku"
   - echo $HEROKU_API_KEY | docker login --username=$heroku_login --password-stdin registry.heroku.com
-
+ 
   # Push image to Heroku
   - echo "Push image to Heroku"
   - docker push registry.heroku.com/rajrahmantodoapp/web
@@ -59,8 +60,6 @@ script:
 # Release image in Heroku
 deploy:
   provider: script
-  script: 
-      - echo "Heroku Release to web"
-      - heroku container:release web --app rajrahmantodoapp
+  script: heroku container:release web --app rajrahmantodoapp
   on:
       all_branches: true

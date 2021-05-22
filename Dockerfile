@@ -3,6 +3,8 @@ FROM python:3.8-slim-buster as base
 RUN pip install poetry
 RUN pip install gunicorn
 RUN pip install flask
+RUN pip install pymongo
+RUN pip install dnspython
 
 WORKDIR /DevOps-Course-Starter
 COPY pyproject.toml /DevOps-Course-Starter/
@@ -13,7 +15,6 @@ RUN poetry config virtualenvs.create false && poetry install --no-interaction
 FROM base as production
 ENV PORT=5000
 RUN poetry install  --no-dev
-#ENTRYPOINT poetry run gunicorn "app:create_app()" --bind 0.0.0.0:$PORT
 CMD sh startapp.sh
 
 # Configure for local development
